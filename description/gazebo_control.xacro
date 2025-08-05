@@ -2,6 +2,32 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!--FRICTION-->
+    <gazebo reference="base_link">
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_left">
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_right">
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_left">
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_right">
+        <mu1>0.001</mu1>
+        <mu2>0.001</mu2>
+    </gazebo>
+
     <gazebo>
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
@@ -24,7 +50,7 @@
 
 
             <max_wheel_torque>200</max_wheel_torque>
-            <max_wheel_acceleration>10.0</max_wheel_acceleration>
+            <max_wheel_acceleration>5.0</max_wheel_acceleration>
 
             
 
