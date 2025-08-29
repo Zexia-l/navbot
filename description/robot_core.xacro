@@ -51,7 +51,7 @@
                 <box size="0.4 0.25 0.16"/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass="0.5" x="0.4" y="0.25" z="0.16">
+        <xacro:inertial_box mass="0.01" x="0.4" y="0.25" z="0.16">
             <origin xyz="0 0 0.08" rpy="0 0 0"/>
         </xacro:inertial_box>
     </link>
@@ -95,7 +95,7 @@
     </geometry>
   </collision>
   <!-- <xacro:inertial_cylinder mass="0.1" length="0.04" radius="0.05"> -->
-  <xacro:inertial_cylinder mass="0.1" length="0.03" radius="0.03">
+  <xacro:inertial_cylinder mass="0.01" length="0.03" radius="0.03">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:inertial_cylinder>
 </link>
@@ -126,7 +126,7 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </geometry>
   </collision>
-  <xacro:inertial_cylinder mass="0.1" length="0.03" radius="0.03">
+  <xacro:inertial_cylinder mass="0.01" length="0.03" radius="0.03">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:inertial_cylinder>
 </link>
@@ -157,7 +157,7 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </geometry>
   </collision>
-  <xacro:inertial_cylinder mass="0.1" length="0.03" radius="0.03">
+  <xacro:inertial_cylinder mass="0.01" length="0.03" radius="0.03">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:inertial_cylinder>
 </link>
@@ -188,7 +188,7 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </geometry>
   </collision>
-  <xacro:inertial_cylinder mass="0.1" length="0.03" radius="0.03">
+  <xacro:inertial_cylinder mass="0.01" length="0.03" radius="0.03">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:inertial_cylinder>
 </link>

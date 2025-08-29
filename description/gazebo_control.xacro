@@ -43,8 +43,8 @@
             <left_joint>base_to_wheel_back_left</left_joint>
             <right_joint>base_to_wheel_back_right</right_joint>
         
-            <wheel_separation>0.24</wheel_separation>
-            <wheel_separation>0.24</wheel_separation>
+            <wheel_separation>0.28</wheel_separation>
+            <wheel_separation>0.28</wheel_separation>
             <wheel_diameter>0.03</wheel_diameter>
             <wheel_diameter>0.03</wheel_diameter>
 

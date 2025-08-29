@@ -8,32 +8,32 @@
         </hardware>
         <joint name="base_to_wheel_front_left">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-100</param>
+                <param name="max">100</param>
             </command_interface>
             <state_interface name="velocity"/>
             <state_interface name="position"/>
         </joint>
         <joint name="base_to_wheel_front_right">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-100</param>
+                <param name="max">100</param>
             </command_interface>
             <state_interface name="velocity"/>
             <state_interface name="position"/>
         </joint>
         <joint name="base_to_wheel_back_left">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-100</param>
+                <param name="max">100</param>
             </command_interface>
             <state_interface name="velocity"/>
             <state_interface name="position"/>
         </joint>
         <joint name="base_to_wheel_back_right">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-100</param>
+                <param name="max">100</param>
             </command_interface>
             <state_interface name="velocity"/>
              <state_interface name="position"/>
@@ -42,10 +42,43 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+
+            <max_wheel_torque>200</max_wheel_torque>
+            <max_wheel_acceleration>5.0</max_wheel_acceleration>
+
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+
             <parameters>$(find navbot)/config/my_controllers.yaml</parameters>
             <!-- <parameters>$(find navbot)/config/gaz_ros2_ctl_use_sim.yaml</parameters> -->
         </plugin>
     </gazebo>
 
+    <!-- <gazebo reference="base_link">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_left">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_right">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_left">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_right">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo> -->
 
 </robot>
