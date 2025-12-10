@@ -23,7 +23,13 @@ This project aims to create a robust mobile robot capable of SLAM (Simultaneous 
 
 The core innovation lies in the **custom hardware interface** built with `micro-ROS` and `ros2_control`. Instead of a simple bridge, the Arduino Due acts as a smart node, managing 4 independent motors and publishing synchronized joint states to the ROS 2 ecosystem.
 
-![Robot Preview](https://via.placeholder.com/800x400?text=Insert+Robot+Simulation+or+Hardware+Photo+Here)
+## Preview
+
+### Robot & SLAM Preview
+
+![image](https://github.com/Zexia-l/navbot/blob/main/images/image_preview_realrobot.png)
+
+![image](https://github.com/Zexia-l/navbot/blob/main/images/image_rviz_slam.png)
 
 ---
 
