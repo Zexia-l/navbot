@@ -27,8 +27,8 @@ The core innovation lies in the **custom hardware interface** built with `micro-
 
 ### Robot & SLAM Preview
 
-![image](https://github.com/Zexia-l/navbot/blob/main/images/image_preview_realrobot.png)
 
+![image](https://github.com/Zexia-l/navbot/blob/main/images/image.png)
 ![image](https://github.com/Zexia-l/navbot/blob/main/images/image_rviz_slam.png)
 
 ---
