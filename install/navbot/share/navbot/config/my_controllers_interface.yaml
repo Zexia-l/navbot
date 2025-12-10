@@ -1,0 +1,47 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 30 # Frekuensi update controller (Hz)
+
+    # 1. Differential Drive Controller
+    diff_cont:
+      type: diff_drive_controller/DiffDriveController
+      # Harap pastikan nama ini sesuai dengan node hardware interface Anda
+      # Anda harus menggunakan nama unik untuk setiap controller
+      extra_command_topic: "joint_commands" # Topik perintah ke hardware interface (optional)
+
+    # 2. Joint State Broadcaster
+    joint_broad:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+diff_cont:
+  ros__parameters:
+    # --- Konfigurasi Roda ---
+    left_wheel_names: ["base_to_wheel_front_left", "base_to_wheel_back_left"]
+    right_wheel_names: ["base_to_wheel_front_right", "base_to_wheel_back_right"]
+
+    # --- Kinematika (Berdasarkan Saved Information) ---
+    # wheel_radius (radius = diameter / 2)
+    wheel_radius: 0.05 # 0.10 m (diameter) / 2 = 0.05 m 
+    use_stamped_vel: false
+    
+    # wheel_separation (wheel base / jarak antara roda kiri dan kanan)
+    wheel_separation: 0.35 # WHEEL_BASE = 0.35 m
+
+    # --- Batasan Kecepatan (Sesuaikan jika perlu) ---
+    publish_rate: 50.0 # Frekuensi publikasi odom (Hz)
+    odom_frame_id: odom
+    base_frame_id: base_link
+    pose_covariance_diagonal: [0.005, 0.005, 0.005, 0.005, 0.005, 0.005]
+    twist_covariance_diagonal: [0.005, 0.005, 0.005, 0.005, 0.005, 0.005]
+
+    # Mode Controller
+    open_loop: false # Gunakan encoder (Closed Loop)
+    
+    # --- Topik Perintah (Input dari Teleop) ---
+    # Topik yang akan disubscribe oleh controller untuk menerima Twist
+    cmd_vel_timeout: 0.5 # Timeout perintah Twist (detik)
+    cmd_vel_topic_type: "geometry_msgs/msg/Twist"
+    
+    # Jika Anda menggunakan motor 4WD terpisah, pastikan setelan ini true.
+    # Ini memastikan setiap roda dipesan secara individual.
+    allow_integration_in_position_joint_mode: true

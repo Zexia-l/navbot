@@ -1,0 +1,57 @@
+[0.017s] Invoking command in '/home/deni/dev_ws/src/navbot/build/navbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --build /home/deni/dev_ws/src/navbot/build/navbot -- -j16 -l16
+[0.069s] Invoked command in '/home/deni/dev_ws/src/navbot/build/navbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --build /home/deni/dev_ws/src/navbot/build/navbot -- -j16 -l16
+[0.108s] Invoking command in '/home/deni/dev_ws/src/navbot/build/navbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --install /home/deni/dev_ws/src/navbot/build/navbot
+[0.122s] -- Install configuration: ""
+[0.122s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/empty.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/ekf.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/nav2_params.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/gazebo_params.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/twist_mux.yaml
+[0.123s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/my_controllers.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/my_controllers_interface.yaml
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/view_bot.rviz
+[0.123s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/mapper_params_online_async.yaml
+[0.124s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description
+[0.124s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/gazebo_control.xacro
+[0.124s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control_old.xacro
+[0.124s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/lidar.xacro
+[0.124s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/depth_camera.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core_old.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control_interface.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core copy_old.xacro
+[0.125s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot.urdf.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/camera.xacro
+[0.125s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/inertial_macros.xacro
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/rplidar.launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/rsp.launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/launch_robot.launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/launch_sim.launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/online_async_launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/visualize.launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/navigation_launch.py
+[0.126s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/localization_launch.py
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/robot_controller.launch.py
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/bringup.launch.py
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds/empty.world
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds/house.world
+[0.127s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/package_run_dependencies/navbot
+[0.128s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/parent_prefix_path/navbot
+[0.128s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/ament_prefix_path.sh
+[0.128s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/ament_prefix_path.dsv
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/path.sh
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/path.dsv
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.bash
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.sh
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.zsh
+[0.129s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.dsv
+[0.129s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/package.dsv
+[0.130s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/packages/navbot
+[0.130s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/cmake/navbotConfig.cmake
+[0.130s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/cmake/navbotConfig-version.cmake
+[0.131s] -- Up-to-date: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/package.xml
+[0.131s] Invoked command in '/home/deni/dev_ws/src/navbot/build/navbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --install /home/deni/dev_ws/src/navbot/build/navbot

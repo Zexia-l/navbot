@@ -1,0 +1,89 @@
+[0.020s] Invoking command in '/home/deni/dev_ws/src/navbot/build/navbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake /home/deni/dev_ws/src/navbot -DCMAKE_INSTALL_PREFIX=/home/deni/dev_ws/src/navbot/install/navbot
+[0.183s] -- The C compiler identification is GNU 11.4.0
+[0.289s] -- The CXX compiler identification is GNU 11.4.0
+[0.300s] -- Detecting C compiler ABI info
+[0.392s] -- Detecting C compiler ABI info - done
+[0.399s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.400s] -- Detecting C compile features
+[0.400s] -- Detecting C compile features - done
+[0.404s] -- Detecting CXX compiler ABI info
+[0.500s] -- Detecting CXX compiler ABI info - done
+[0.506s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.506s] -- Detecting CXX compile features
+[0.507s] -- Detecting CXX compile features - done
+[0.528s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.767s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.983s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.165s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.189s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.190s] -- Configured cppcheck include dirs: 
+[1.190s] -- Configured cppcheck exclude dirs and/or files: 
+[1.209s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.209s] -- Configured cpplint exclude dirs and/or files: 
+[1.213s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.222s] -- Added test 'lint_cmake' to check CMake code style
+[1.229s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.248s] -- Added test 'uncrustify' to check C / C++ code style
+[1.248s] -- Configured uncrustify additional arguments: 
+[1.252s] -- Added test 'xmllint' to check XML markup files
+[1.254s] -- Configuring done
+[1.257s] -- Generating done
+[1.258s] -- Build files have been written to: /home/deni/dev_ws/src/navbot/build/navbot
+[1.265s] Invoked command in '/home/deni/dev_ws/src/navbot/build/navbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake /home/deni/dev_ws/src/navbot -DCMAKE_INSTALL_PREFIX=/home/deni/dev_ws/src/navbot/install/navbot
+[1.266s] Invoking command in '/home/deni/dev_ws/src/navbot/build/navbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --build /home/deni/dev_ws/src/navbot/build/navbot -- -j16 -l16
+[1.317s] Invoked command in '/home/deni/dev_ws/src/navbot/build/navbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --build /home/deni/dev_ws/src/navbot/build/navbot -- -j16 -l16
+[1.363s] Invoking command in '/home/deni/dev_ws/src/navbot/build/navbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --install /home/deni/dev_ws/src/navbot/build/navbot
+[1.371s] -- Install configuration: ""
+[1.371s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config
+[1.371s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/empty.yaml
+[1.372s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/ekf.yaml
+[1.372s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/nav2_params.yaml
+[1.372s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/gazebo_params.yaml
+[1.372s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/twist_mux.yaml
+[1.373s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/my_controllers.yaml
+[1.373s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/my_controllers_interface.yaml
+[1.373s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/view_bot.rviz
+[1.373s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/mapper_params_online_async.yaml
+[1.374s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description
+[1.374s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/gazebo_control.xacro
+[1.374s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control_old.xacro
+[1.374s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/lidar.xacro
+[1.375s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/depth_camera.xacro
+[1.375s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core.xacro
+[1.375s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control.xacro
+[1.376s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core_old.xacro
+[1.376s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control_interface.xacro
+[1.376s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core copy_old.xacro
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot.urdf.xacro
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/camera.xacro
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/inertial_macros.xacro
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/rplidar.launch.py
+[1.377s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/rsp.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/launch_robot.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/launch_sim.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/online_async_launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/visualize.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/navigation_launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/localization_launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/robot_controller.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/bringup.launch.py
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds
+[1.378s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds/empty.world
+[1.379s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/worlds/house.world
+[1.379s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/package_run_dependencies/navbot
+[1.379s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/parent_prefix_path/navbot
+[1.379s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/ament_prefix_path.sh
+[1.379s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/ament_prefix_path.dsv
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/path.sh
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/environment/path.dsv
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.bash
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.sh
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.zsh
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/local_setup.dsv
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/package.dsv
+[1.380s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/ament_index/resource_index/packages/navbot
+[1.381s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/cmake/navbotConfig.cmake
+[1.381s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/cmake/navbotConfig-version.cmake
+[1.381s] -- Installing: /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/package.xml
+[1.383s] Invoked command in '/home/deni/dev_ws/src/navbot/build/navbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/deni/dev_ws/install/sensor_msgs_py:/home/deni/dev_ws/install/my_odom_converter:/opt/ros/humble /usr/bin/cmake --install /home/deni/dev_ws/src/navbot/build/navbot

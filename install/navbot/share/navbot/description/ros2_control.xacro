@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="base_to_wheel_front_left">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="base_to_wheel_front_right">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="base_to_wheel_back_left">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="base_to_wheel_back_right">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find navbot)/config/my_controllers.yaml</parameters>
+            <!-- <parameters>$(find articubot_one)/config/gaz_ros2_ctl_use_sim.yaml</parameters> -->
+        </plugin>
+    </gazebo>
+
+    <!-- <gazebo reference="base_link">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_left">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_front_right">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_left">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo>
+
+    <gazebo reference="base_to_wheel_back_right">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+    </gazebo> -->
+
+</robot>

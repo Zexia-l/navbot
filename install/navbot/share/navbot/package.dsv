@@ -1,0 +1,8 @@
+source;share/navbot/hook/cmake_prefix_path.ps1
+source;share/navbot/hook/cmake_prefix_path.dsv
+source;share/navbot/hook/cmake_prefix_path.sh
+source;share/navbot/local_setup.bash
+source;share/navbot/local_setup.dsv
+source;share/navbot/local_setup.ps1
+source;share/navbot/local_setup.sh
+source;share/navbot/local_setup.zsh

@@ -1,0 +1,33 @@
+/**:
+  ros__parameters:
+
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom 
+    
+    frequency: 30.0
+    
+    publish_tf: true 
+
+ 
+    odom0: /odom/wheel 
+    odom0_queue_size: 10
+    odom0_differential: false 
+    
+    odom0_config: [true,  true,  false,   # X, Y, Z Posisi
+                   false, false, true,    # Roll, Pitch, Yaw (Orientasi diabaikan/hanya Yaw jika ada)
+                   true,  true,  false,   # VX, VY, VZ Kecepatan Linear
+                   false, false, true]    # Vroll, Vpitch, Vyaw Kecepatan Angular
+    
+    imu0: /imu/data_raw # Topik dari Arduino Due Anda
+    imu0_queue_size: 10
+    imu0_differential: true 
+
+    # IMU Raw (MPU6050)
+    imu0_config: [false, false, false,   # X, Y, Z Posisi
+                  true, true, false,   # Roll, Pitch, Yaw (Orientasi)
+                  false, false, false,   # VX, VY, VZ Kecepatan Linear
+                  true, true, true]    # Vroll, Vpitch, Vyaw Kecepatan Angular (Hanya Gyro Z)
+
+   
+    imu0_remove_gravitational_acceleration: true 

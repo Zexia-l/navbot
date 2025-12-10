@@ -6,8 +6,8 @@ controller_manager:
     diff_cont:
       type: diff_drive_controller/DiffDriveController
 
-    # joint_broad:
-    joint_state_broadcaster:
+    joint_broad:
+    # joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
 diff_cont:
@@ -22,12 +22,19 @@ diff_cont:
 
     left_wheel_names: ["base_to_wheel_back_left","base_to_wheel_front_left"]
     right_wheel_names: ["base_to_wheel_back_right","base_to_wheel_front_right"]
-    wheel_separation: 0.34
-    wheel_radius: 0.03
+    wheel_separation: 0.33 #0.29 or 0.14
+    wheel_radius: 0.015 #0.05 from hardware
+
+    wheel_separation_multiplier: 3.5  # Mulai dengan angka 2.8 atau 3.0
+
+    left_wheel_radius_multiplier: 3.95
+    right_wheel_radius_multiplier: 3.95
+
+    # enable_odom_tf: true
 
     use_stamped_vel: false
 
-    open_loop: true
+    open_loop: false
 
     # wheels_per_side: 2
     # wheel_separation_multiplier: x
@@ -38,7 +45,6 @@ diff_cont:
     # pose_covariance_diagonal : [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     # twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     # open_loop: false
-    enable_odom_tf: true
 
     # cmd_vel_timeout: x
     # publish_limited_velocity: x

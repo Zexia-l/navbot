@@ -120,8 +120,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -161,8 +161,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -201,8 +201,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -218,8 +218,8 @@
 <joint name="base_to_wheel_back_left" type="continuous">
   <parent link="base_link"/>
   <child link="wheel_back_left_link"/>
-  <origin xyz="${-wheel_offset_x} ${wheel_offset_y} 0" rpy="${pi/2} 0 0"/>
-  <axis xyz="0 0 -1"/>
+  <origin xyz="${-wheel_offset_x} ${wheel_offset_y} 0" rpy="-${pi/2} 0 0"/>
+  <axis xyz="0 0 1"/>
 </joint>
 
 <!-- kanan-belakang -->
@@ -241,8 +241,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
