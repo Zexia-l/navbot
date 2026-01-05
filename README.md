@@ -30,6 +30,7 @@ The core innovation lies in the **custom hardware interface** built with `micro-
 
 ![image](https://github.com/Zexia-l/navbot/blob/main/images/image.png)
 ![image](https://github.com/Zexia-l/navbot/blob/main/images/image_rviz_slam.png)
+![video](https://github.com/Zexia-l/navbot/blob/main/images/obstacle_avoid_preview.mp4)
 
 ---
 
