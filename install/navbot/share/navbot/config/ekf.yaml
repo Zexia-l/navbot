@@ -19,15 +19,15 @@
                    true,  true,  false,   # VX, VY, VZ Kecepatan Linear
                    false, false, true]    # Vroll, Vpitch, Vyaw Kecepatan Angular
     
-    imu0: /imu/data_raw # Topik dari Arduino Due Anda
-    imu0_queue_size: 10
-    imu0_differential: true 
+    # imu0: /imu/data_raw # Topik dari Arduino Due Anda
+    # imu0_queue_size: 10
+    # imu0_differential: true 
 
-    # IMU Raw (MPU6050)
-    imu0_config: [false, false, false,   # X, Y, Z Posisi
-                  true, true, false,   # Roll, Pitch, Yaw (Orientasi)
-                  false, false, false,   # VX, VY, VZ Kecepatan Linear
-                  true, true, true]    # Vroll, Vpitch, Vyaw Kecepatan Angular (Hanya Gyro Z)
+    # # IMU Raw (MPU6050)
+    # imu0_config: [false, false, false,   # X, Y, Z Posisi
+    #               true, true, false,   # Roll, Pitch, Yaw (Orientasi)
+    #               false, false, false,   # VX, VY, VZ Kecepatan Linear
+    #               true, true, true]    # Vroll, Vpitch, Vyaw Kecepatan Angular (Hanya Gyro Z)
 
    
-    imu0_remove_gravitational_acceleration: true 
+    # imu0_remove_gravitational_acceleration: true 

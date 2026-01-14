@@ -1,5 +1,6 @@
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/empty.yaml
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/ekf.yaml
+/home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/nav2_params.yaml
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/gazebo_params.yaml
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/twist_mux.yaml
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/config/my_controllers.yaml
@@ -15,7 +16,9 @@
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core_old.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/ros2_control_interface.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core copy_old.xacro
+/home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/lidar_interface.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot.urdf.xacro
+/home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/robot_core_copy_old.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/camera.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/description/inertial_macros.xacro
 /home/deni/dev_ws/src/navbot/install/navbot/share/navbot/launch/rplidar.launch.py

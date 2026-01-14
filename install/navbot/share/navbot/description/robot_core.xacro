@@ -4,14 +4,14 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
     <xacro:property name="chassis_length" value="0.4"/>
-    <xacro:property name="chassis_width" value="0.19"/>
+    <xacro:property name="chassis_width" value="0.25"/>
     <xacro:property name="chassis_height" value="0.16"/>
     <xacro:property name="chassis_mass" value="1.0"/>
-    <xacro:property name="wheel_radius" value="0.025"/>
+    <xacro:property name="wheel_radius" value="0.03"/>
     <xacro:property name="wheel_thickness" value="0.03"/>
     <xacro:property name="wheel_mass" value="0.05"/>
-    <xacro:property name="wheel_offset_x" value="0.145"/>
-    <xacro:property name="wheel_offset_y" value="0.145"/> <!--33 offset total-->
+    <xacro:property name="wheel_offset_x" value="0.165"/>
+    <xacro:property name="wheel_offset_y" value="0.17"/>
     <xacro:property name="wheel_offset_z" value="0.01"/>
     <!-- <xacro:property name="caster_wheel_radius" value="0.01"/>
     <xacro:property name="caster_wheel_mass" value="0.01"/>
@@ -120,8 +120,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -138,8 +138,8 @@
 <joint name="base_to_wheel_front_left" type="continuous">
   <parent link="base_link"/>
   <child link="wheel_front_left_link"/>
-  <origin xyz="${-wheel_offset_x} ${-wheel_offset_y} 0" rpy="${pi/2} 0 0"/>
-  <axis xyz="0 0 -1"/>
+  <origin xyz="${wheel_offset_x} ${wheel_offset_y} 0" rpy="-${pi/2} 0 0"/>
+  <axis xyz="0 0 1"/>
 </joint>
 
 <!-- kanan-depan -->
@@ -161,8 +161,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -201,8 +201,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -241,8 +241,8 @@
     </geometry>
     <friction>
       <ode>
-        <mu>1000000</mu>
-        <mu2>1000000</mu2>
+        <mu>0.5</mu>
+        <mu2>0.5</mu2>
         <slip1>0.01</slip1>
         <slip2>0.01</slip2>
       </ode>
@@ -258,8 +258,8 @@
 <joint name="base_to_wheel_back_right" type="continuous">
   <parent link="base_link"/>
   <child link="wheel_back_right_link"/>
-  <origin xyz="${wheel_offset_x} ${wheel_offset_y} 0" rpy="-${pi/2} 0 0"/>
-  <axis xyz="0 0 1"/>
+  <origin xyz="${-wheel_offset_x} ${-wheel_offset_y} 0" rpy="${pi/2} 0 0"/>
+  <axis xyz="0 0 -1"/>
 </joint>
 
 

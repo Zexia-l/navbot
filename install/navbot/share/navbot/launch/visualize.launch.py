@@ -83,14 +83,14 @@ def generate_launch_description():
         output='screen'
     )
 
-    robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
+    # robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
     
     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')
 
     controller_manager = Node(
     package='controller_manager',
     executable='ros2_control_node',
-    parameters=[{'robot_description': robot_description},
+    parameters=[{'robot_description': robot_description_config.toxml()},
                     controller_params_file], # Asumsi file konfigurasi controller Anda bernama ros2_controllers.yaml
     )
 
@@ -111,8 +111,8 @@ def generate_launch_description():
         # micro_ros_agent,
         node_robot_state_publisher,
         # odom_generator,
-        # ekf_node,
-        # rviz,
+        ekf_node,
+        rviz,
         controller_manager,
         diff_drive_spawner,
         joint_broad_spawner
