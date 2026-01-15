@@ -28,7 +28,7 @@ The core innovation lies in the **custom hardware interface** built with `micro-
 ### Robot & SLAM Preview
 
 
-![image](https://github.com/Zexia-l/navbot/blob/main/images/image.png)
+![image](https://github.com/Zexia-l/navbot/blob/main/images/WhatsApp%20Image%202026-01-15%20at%2014.07.34.jpeg)
 ![image](https://github.com/Zexia-l/navbot/blob/main/images/image_rviz_slam.png)
 
 Nav+Obstacle Avoidance Preview:
